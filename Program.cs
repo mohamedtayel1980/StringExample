@@ -4,8 +4,23 @@
     {
         static void Main()
         {
+           // Stringintern();
+
+            Utilities utilities = new Utilities();
+
+            utilities.UsingEscapeCharacters();
+            utilities.FilePathExample();
+            utilities.VerbatimStringExample();
+            utilities.VerbatimStringWithQuotes();
+
+            Console.ReadLine(); // To keep the console open
+        }
+
+        private static void Stringintern()
+        {
             // String literals (automatically interned)
             string literal1 = "hello";
+
             string literal2 = "hello";
 
             // Dynamically created string (not automatically interned)
